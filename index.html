@@ -3,23 +3,9 @@
 <head>
 
 <meta charset="UTF-8">
-<title>KON</title>
+<title>Pankaj Bhardwaj</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Join King Of Nifty's free Telegram channel for financial education, market basics, and wealth mindset learning.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style><!doctype html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<title>KON - King Of Nifty</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Join King Of Nifty's free Telegram channel for financial education, market basics, and wealth mindset learning.">
+<meta name="description" content="Join Pankaj Bhardwaj's free Telegram channel for financial education, market basics, and wealth mindset learning.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -479,11 +465,11 @@ src="https://www.facebook.com/tr?id=3116538148541877&ev=PageView&noscript=1"
     <div class="profile-ring"></div>
     <div class="profile-ring-inner"></div>
     <div class="logo">
-      <img src="kon.jpg" alt="King Of Nifty">
+      <img src="kon.jpg" alt="Pankaj Bhardwaj">
     </div>
   </div>
 
-  <h1>King Of Nifty</h1>
+  <h1>Pankaj Bhardwaj</h1>
   <div class="tagline">Learn More &bull; Earn More</div>
 
   <!-- Main CTA -->
@@ -554,7 +540,7 @@ src="https://www.facebook.com/tr?id=3116538148541877&ev=PageView&noscript=1"
   </div>
 
   <div class="netad-btn">
-    <a href="https://t.me/+ifc6dyg-xiA2ZGE1" target="_blank" rel="noopener">
+    <a href="https://t.me/+QbDylbVv0tY5MDg1" target="_blank" rel="noopener">
       Ad Managed by Digital Ads Expert
     </a>
   </div>
@@ -601,7 +587,7 @@ function fbCopy(text, btn, done) {
   var c = document.getElementById("particles");
   var ctx = c.getContext("2d");
   var stars = [];
-  var numStars = 110; // High star density for immersive depth
+  var numStars = 110;
 
   function resize() { 
     c.width = window.innerWidth; 
@@ -612,12 +598,11 @@ function fbCopy(text, btn, done) {
 
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-  // Realistic star colors
   var colors = [
-    "255, 255, 255", // Crystal White
-    "255, 225, 170", // Soft Gold
-    "200, 235, 255", // Ice Blue
-    "245, 192, 66"   // Theme Gold
+    "255, 255, 255",
+    "255, 225, 170",
+    "200, 235, 255",
+    "245, 192, 66"
   ];
 
   function Star() {
@@ -627,34 +612,29 @@ function fbCopy(text, btn, done) {
   Star.prototype.reset = function(initial) {
     this.x = Math.random() * c.width;
     this.y = initial ? Math.random() * c.height : (Math.random() < 0.5 ? -10 : c.height + 10);
-    this.size = Math.random() * 1.5 + 0.3; // Distant pinpoint to near bright stars
+    this.size = Math.random() * 1.5 + 0.3;
     
-    // Slow natural floating movement
     this.dx = (Math.random() - 0.5) * 0.18;
     this.dy = (Math.random() - 0.5) * 0.18;
     
-    // Independent twinkling parameters
     this.baseAlpha = Math.random() * 0.4 + 0.2;
     this.alpha = this.baseAlpha;
     this.twinklePhase = Math.random() * Math.PI * 2;
-    this.twinkleSpeed = Math.random() * 0.035 + 0.008; // Multi-speed blinking
+    this.twinkleSpeed = Math.random() * 0.035 + 0.008;
     
-    // Color & Lens Flare properties
     this.color = colors[Math.floor(Math.random() * colors.length)];
-    this.hasFlare = this.size > 1.2 && Math.random() > 0.4; // Cross-flare for prominent stars
+    this.hasFlare = this.size > 1.2 && Math.random() > 0.4;
   };
 
   Star.prototype.update = function() {
     this.x += this.dx;
     this.y += this.dy;
 
-    // Smooth Sine Wave Blinking
     this.twinklePhase += this.twinkleSpeed;
     this.alpha = this.baseAlpha + Math.sin(this.twinklePhase) * 0.45;
     if (this.alpha < 0.05) this.alpha = 0.05;
     if (this.alpha > 1) this.alpha = 1;
 
-    // Wrap around screen boundaries
     if (this.x < -15 || this.x > c.width + 15 || this.y < -15 || this.y > c.height + 15) {
       this.reset(false);
     }
@@ -663,7 +643,6 @@ function fbCopy(text, btn, done) {
   Star.prototype.draw = function() {
     ctx.save();
     
-    // 1. Soft Radial Outer Glow (For larger stars)
     if (this.size > 1) {
       var glowRad = this.size * 3.5;
       var grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, glowRad);
@@ -675,23 +654,19 @@ function fbCopy(text, btn, done) {
       ctx.fill();
     }
 
-    // 2. Solid Core Pinpoint
     ctx.fillStyle = "rgba(" + this.color + ", " + Math.min(1, this.alpha + 0.25) + ")";
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.fill();
 
-    // 3. 4-Point Lens Flare Spikes (Cross-sparkle for prominent twinkling stars)
     if (this.hasFlare && this.alpha > 0.45) {
       ctx.strokeStyle = "rgba(" + this.color + ", " + (this.alpha * 0.5) + ")";
       ctx.lineWidth = 0.6;
       var len = this.size * 4.5 * this.alpha;
       
       ctx.beginPath();
-      // Horizontal
       ctx.moveTo(this.x - len, this.y);
       ctx.lineTo(this.x + len, this.y);
-      // Vertical
       ctx.moveTo(this.x, this.y - len);
       ctx.lineTo(this.x, this.y + len);
       ctx.stroke();
@@ -713,928 +688,6 @@ function fbCopy(text, btn, done) {
     requestAnimationFrame(loop);
   }
   loop();
-})();
-</script>
-
-</body>
-</html>
-
-:root {
-  --bg-deep: #0a1510;
-  --bg-card: #122a21;
-  --bg-card-light: #173529;
-  --gold: #d4af37;
-  --gold-light: #f6e27a;
-  --gold-glow: rgba(212, 175, 55, 0.35);
-  --text-primary: #eaf5f0;
-  --text-secondary: #a9cfc2;
-  --text-muted: #7aa99b;
-  --border-subtle: rgba(255,255,255,0.06);
-  --border-gold: rgba(212,175,55,0.3);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  background: var(--bg-deep);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--text-primary);
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* ===== BG ===== */
-.bg-layer {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.bg-layer .orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  animation: orbFloat 14s ease-in-out infinite alternate;
-}
-
-.bg-layer .orb:nth-child(1) {
-  width: 280px; height: 280px;
-  background: radial-gradient(circle, rgba(212,175,55,0.2), transparent 70%);
-  top: -100px; left: 50%;
-  transform: translateX(-50%);
-  animation-duration: 15s;
-}
-
-.bg-layer .orb:nth-child(2) {
-  width: 200px; height: 200px;
-  background: radial-gradient(circle, rgba(246,226,122,0.1), transparent 70%);
-  bottom: 5%; right: -50px;
-  animation-duration: 11s;
-  animation-delay: -4s;
-}
-
-.bg-layer .orb:nth-child(3) {
-  width: 150px; height: 150px;
-  background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 70%);
-  bottom: 35%; left: -30px;
-  animation-duration: 18s;
-  animation-delay: -8s;
-}
-
-@keyframes orbFloat {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(25px, -18px) scale(1.08); }
-  100% { transform: translate(-18px, 25px) scale(0.94); }
-}
-
-#particles {
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* ===== CARD ===== */
-.wrapper {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 430px;
-  margin: 20px;
-  background: linear-gradient(170deg, var(--bg-card-light), var(--bg-card));
-  border-radius: 28px;
-  padding: 34px 22px 30px;
-  box-shadow:
-    0 25px 70px rgba(0,0,0,0.6),
-    0 0 0 1px var(--border-subtle),
-    inset 0 1px 0 rgba(255,255,255,0.04);
-  text-align: center;
-  animation: cardEntry 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@keyframes cardEntry {
-  from { opacity: 0; transform: translateY(35px) scale(0.97); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-/* ===== PROFILE ===== */
-.profile-wrap {
-  position: relative;
-  display: inline-block;
-}
-
-.profile-ring {
-  position: absolute;
-  inset: -7px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  border-top-color: var(--gold);
-  border-right-color: var(--gold-light);
-  animation: ringSpin 3s linear infinite;
-}
-
-.profile-ring-inner {
-  position: absolute;
-  inset: -2px;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  border-bottom-color: rgba(212,175,55,0.35);
-  border-left-color: rgba(246,226,122,0.15);
-  animation: ringSpin 5s linear infinite reverse;
-}
-
-@keyframes ringSpin {
-  to { transform: rotate(360deg); }
-}
-
-.logo {
-  width: 105px;
-  height: 105px;
-  border-radius: 50%;
-  padding: 4px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold));
-  position: relative;
-  z-index: 2;
-}
-
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  background: #0a1510;
-  display: block;
-}
-
-/* ===== TEXT ===== */
-h1 {
-  margin-top: 18px;
-  font-size: 25px;
-  font-weight: 700;
-  background: linear-gradient(90deg, var(--gold-light), var(--gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.3px;
-}
-
-.tagline {
-  font-size: 13px;
-  color: var(--text-secondary);
-  margin-top: 4px;
-  font-weight: 400;
-}
-
-/* ===== CTA - Compact ===== */
-.cta-main {
-  margin-top: 18px;
-}
-
-.cta-main a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  padding: 11px 22px;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: var(--bg-deep);
-  text-decoration: none;
-  box-shadow: 0 4px 18px var(--gold-glow);
-  transition: all 0.25s ease;
-  position: relative;
-  overflow: hidden;
-  animation: ctaPulse 2.2s ease-in-out infinite;
-}
-
-.cta-main a::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-  transform: translateX(-100%);
-  transition: transform 0.4s ease;
-}
-
-.cta-main a:hover::after {
-  transform: translateX(100%);
-}
-
-.cta-main a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(212,175,55,0.5);
-}
-
-.cta-main a:active {
-  transform: scale(0.97);
-}
-
-@keyframes ctaPulse {
-  0%, 100% { box-shadow: 0 4px 18px var(--gold-glow); }
-  50%      { box-shadow: 0 4px 30px rgba(212,175,55,0.5), 0 0 0 5px rgba(212,175,55,0.06); }
-}
-
-.cta-icon {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
-}
-
-/* ===== TIMER ===== */
-.timer-box {
-  margin-top: 14px;
-  padding: 10px 14px;
-  background: rgba(212,175,55,0.05);
-  border: 1px dashed rgba(246,226,122,0.2);
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-.timer-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(246,226,122,0.03), transparent);
-  animation: shimmer 2.5s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% { transform: translateX(-100%); }
-  50%      { transform: translateX(100%); }
-}
-
-.timer-text {
-  font-size: 11px;
-  color: rgba(246,226,122,0.7);
-  position: relative;
-  z-index: 1;
-}
-
-.timer-count {
-  font-weight: 800;
-  font-size: 15px;
-  color: #fff;
-  display: inline-block;
-  min-width: 16px;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.timer-count.tick {
-  transform: scale(1.3);
-}
-
-.timer-progress {
-  margin-top: 7px;
-  height: 3px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-
-.timer-progress-bar {
-  height: 100%;
-  background: linear-gradient(90deg, var(--gold), var(--gold-light));
-  border-radius: 3px;
-  transition: width 1s linear;
-  box-shadow: 0 0 6px var(--gold-glow);
-}
-
-/* ===== INFO BOX ===== */
-.info-box {
-  margin-top: 18px;
-  background: rgba(255,255,255,0.03);
-  border-radius: 14px;
-  padding: 16px 18px;
-  text-align: left;
-  border: 1px solid var(--border-subtle);
-  animation: fadeSlideUp 0.6s 0.3s both;
-}
-
-@keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.info-box ul {
-  list-style: none;
-}
-
-.info-box li {
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  font-size: 13px;
-  padding: 7px 0;
-  color: var(--text-primary);
-  line-height: 1.5;
-}
-
-.info-box li + li {
-  border-top: 1px solid rgba(255,255,255,0.04);
-}
-
-.check-icon {
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: rgba(212,175,55,0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1px;
-}
-
-.check-icon svg {
-  width: 10px;
-  height: 10px;
-}
-
-/* ===== SECONDARY ROW ===== */
-.cta-row {
-  margin-top: 14px;
-  display: flex;
-  gap: 8px;
-}
-
-.cta-secondary {
-  flex: 1;
-}
-
-.cta-secondary a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding: 9px 8px;
-  font-size: 11px;
-  font-weight: 600;
-  border-radius: 9px;
-  background: transparent;
-  color: var(--gold-light);
-  text-decoration: none;
-  border: 1.5px solid var(--border-gold);
-  transition: all 0.25s ease;
-}
-
-.cta-secondary a:hover {
-  background: rgba(212,175,55,0.08);
-  border-color: var(--gold);
-  transform: translateY(-1px);
-}
-
-.copy-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding: 9px 8px;
-  font-size: 11px;
-  font-weight: 600;
-  border-radius: 9px;
-  background: rgba(255,255,255,0.03);
-  color: var(--text-muted);
-  border: 1px solid rgba(255,255,255,0.08);
-  cursor: pointer;
-  transition: all 0.25s ease;
-  font-family: "Poppins", sans-serif;
-}
-
-.copy-btn:hover {
-  background: rgba(255,255,255,0.06);
-  color: var(--text-secondary);
-}
-
-.copy-btn.copied {
-  background: rgba(212,175,55,0.1);
-  border-color: var(--border-gold);
-  color: var(--gold-light);
-}
-
-/* ===== TRUST ===== */
-.trust-dots-row {
-  margin-top: 14px;
-  font-size: 12px;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-.trust-dots {
-  display: flex;
-  gap: 3px;
-}
-
-.trust-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--gold);
-  opacity: 0.5;
-  animation: dotPulse 1.5s ease-in-out infinite;
-}
-
-.trust-dot:nth-child(2) { animation-delay: 0.2s; }
-.trust-dot:nth-child(3) { animation-delay: 0.4s; }
-
-@keyframes dotPulse {
-  0%, 100% { opacity: 0.25; transform: scale(0.8); }
-  50%      { opacity: 1; transform: scale(1.1); }
-}
-
-/* ===== DISCLAIMER ===== */
-.disclaimer {
-  margin-top: 14px;
-  font-size: 10px;
-  color: var(--text-muted);
-  line-height: 1.7;
-  opacity: 0.8;
-}
-
-/* ===== NETAD ===== */
-.netad-btn {
-  margin-top: 18px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(255,255,255,0.04);
-}
-
-.netad-btn a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.03);
-  color: var(--gold);
-  font-size: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1px solid rgba(212,175,55,0.15);
-  transition: all 0.25s ease;
-  letter-spacing: 0.2px;
-}
-
-.netad-btn a:hover {
-  background: rgba(212,175,55,0.08);
-  border-color: var(--border-gold);
-}
-
-/* ===== REDIRECT OVERLAY ===== */
-.redirect-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: rgba(5, 12, 8, 0.93);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.redirect-overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.redirect-card {
-  text-align: center;
-  max-width: 340px;
-  width: 100%;
-  animation: overlayPop 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@keyframes overlayPop {
-  from { opacity: 0; transform: translateY(25px) scale(0.96); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-.redirect-card .r-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 16px;
-  box-shadow: 0 6px 24px var(--gold-glow);
-}
-
-.redirect-card .r-icon svg {
-  width: 24px;
-  height: 24px;
-  color: var(--bg-deep);
-}
-
-.redirect-card h2 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 6px;
-}
-
-.redirect-card p {
-  font-size: 13px;
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.redirect-card .ov-cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  padding: 13px 20px;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: var(--bg-deep);
-  text-decoration: none;
-  box-shadow: 0 6px 24px var(--gold-glow);
-  transition: all 0.25s ease;
-  animation: ctaPulse 2.2s ease-in-out infinite;
-}
-
-.redirect-card .ov-cta:hover {
-  transform: translateY(-2px);
-}
-
-.redirect-card .ov-cta:active {
-  transform: scale(0.97);
-}
-
-.redirect-card .ov-tg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  width: 100%;
-  margin-top: 10px;
-  padding: 11px 16px;
-  font-size: 13px;
-  font-weight: 600;
-  border-radius: 10px;
-  background: transparent;
-  color: var(--gold-light);
-  text-decoration: none;
-  border: 1.5px solid var(--border-gold);
-  transition: all 0.25s ease;
-}
-
-.redirect-card .ov-tg:hover {
-  background: rgba(212,175,55,0.06);
-  border-color: var(--gold);
-}
-
-.redirect-card .ov-copy {
-  margin-top: 12px;
-  padding: 9px 16px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.04);
-  color: var(--text-muted);
-  font-size: 11px;
-  font-weight: 500;
-  border: 1px solid rgba(255,255,255,0.08);
-  cursor: pointer;
-  transition: all 0.25s ease;
-  font-family: "Poppins", sans-serif;
-}
-
-.redirect-card .ov-copy:hover {
-  background: rgba(255,255,255,0.07);
-  color: var(--text-secondary);
-}
-
-.redirect-card .ov-copy.copied {
-  background: rgba(212,175,55,0.1);
-  border-color: var(--border-gold);
-  color: var(--gold-light);
-}
-
-.redirect-card .ov-hint {
-  margin-top: 14px;
-  font-size: 10px;
-  color: var(--text-muted);
-  opacity: 0.6;
-  line-height: 1.6;
-}
-
-@media (max-width: 460px) {
-  .wrapper {
-    margin: 12px;
-    padding: 26px 16px 22px;
-    border-radius: 22px;
-  }
-  h1 { font-size: 22px; }
-  .cta-row { flex-direction: column; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-</style>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3611341749013242');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3611341749013242&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-</head>
-
-<body>
-
-<div class="bg-layer" aria-hidden="true">
-  <div class="orb"></div>
-  <div class="orb"></div>
-  <div class="orb"></div>
-</div>
-
-<canvas id="particles" aria-hidden="true"></canvas>
-
-<div class="wrapper">
-
-  <!-- Profile with spinning ring -->
-  <div class="profile-wrap">
-    <div class="profile-ring"></div>
-    <div class="profile-ring-inner"></div>
-    <div class="logo">
-      <img src="https://original.netadexpert.live/wp-content/uploads/2026/03/king-of-nifty-bopal-ahmedabad-stock-brokers-8jxsz80pul.webp" alt="King Of Nifty">
-    </div>
-  </div>
-
-  <h1>King Of Nifty</h1>
-  <div class="tagline">Learn More &bull; Earn More</div>
-
-  <!-- Main CTA - compact + Subscribe event -->
-  <div class="cta-main">
-    <a href="https://t.me/+xkLX2WMRJTM5ZTQ9" target="_blank" rel="noopener" onclick="trackSubscribe()">
-      <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.418 1.955.34.31.7.534 1.01.71l.022.012 4.52 2.576c.379.716.848 1.602 1.19 2.246.207.378.373.677.483.87l.064.112.018.032c.21.37.486.672.85.863.366.192.737.21 1.066.132a1.96 1.96 0 0 0 .653-.295l.005-.004 2.38-1.923 3.024 2.633.018.015a2.08 2.08 0 0 0 1.536.438c.57-.066 1.015-.37 1.288-.695.27-.322.397-.67.456-.903l.003-.014 2.965-13.174c.141-.627.055-1.167-.19-1.574-.243-.404-.63-.637-1.002-.747a2.07 2.07 0 0 0-.562-.074z"/><path d="M14.5 14.5l-2 4" stroke-width="1.5"/></svg>
-      Join Free Telegram Channel
-    </a>
-  </div>
-
-  <!-- Timer -->
-  <div class="timer-box">
-    <div class="timer-text">
-      Auto redirecting in <span id="countdown" class="timer-count">15</span> seconds
-    </div>
-    <div class="timer-progress">
-      <div class="timer-progress-bar" id="progressBar" style="width: 100%"></div>
-    </div>
-  </div>
-
-  <!-- Info box -->
-  <div class="info-box">
-    <ul>
-      <li>
-        <span class="check-icon">
-          <svg viewBox="0 0 12 12" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 6 5 9 10 3"/></svg>
-        </span>
-        Financial Education & Wealth Mindset
-      </li>
-      <li>
-        <span class="check-icon">
-          <svg viewBox="0 0 12 12" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 6 5 9 10 3"/></svg>
-        </span>
-        Market Basics & Learning Content
-      </li>
-      <li>
-        <span class="check-icon">
-          <svg viewBox="0 0 12 12" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 6 5 9 10 3"/></svg>
-        </span>
-        Beginner Friendly Community
-      </li>
-      <li>
-        <span class="check-icon">
-          <svg viewBox="0 0 12 12" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 6 5 9 10 3"/></svg>
-        </span>
-        No Tips &bull; No Guarantees &bull; Only Learning
-      </li>
-    </ul>
-  </div>
-
-  <!-- Secondary row + Subscribe event on Open App -->
-  <div class="cta-row">
-    <div class="cta-secondary">
-      <a href="tg://join?invite=xkLX2WMRJTM5ZTQ9" onclick="trackSubscribe()">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Open App
-      </a>
-    </div>
-    <button class="copy-btn" id="copyBtn" onclick="copyLink()">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-      Copy Link
-    </button>
-  </div>
-
-  <div class="trust-dots-row">
-    <span class="trust-dots">
-      <span class="trust-dot"></span>
-      <span class="trust-dot"></span>
-      <span class="trust-dot"></span>
-    </span>
-    Trusted by learners across India
-  </div>
-
-  <div class="disclaimer">
-    This channel is strictly for educational purposes only.<br>
-    We do not provide investment advice or guaranteed returns.<br>
-    Please consult a financial advisor before making decisions.
-  </div>
-
-  <div class="netad-btn">
-    <a href="https://t.me/+ifc6dyg-xiA2ZGE1" target="_blank" rel="noopener">
-      Ad Managed by Digital Ads Expert
-    </a>
-  </div>
-
-</div>
-
-<!-- Overlay -->
-<div class="redirect-overlay" id="redirectOverlay">
-  <div class="redirect-card">
-    <div class="r-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.418 1.955.34.31.7.534 1.01.71l.022.012 4.52 2.576c.379.716.848 1.602 1.19 2.246.207.378.373.677.483.87l.064.112.018.032c.21.37.486.672.85.863.366.192.737.21 1.066.132a1.96 1.96 0 0 0 .653-.295l.005-.004 2.38-1.923 3.024 2.633.018.015a2.08 2.08 0 0 0 1.536.438c.57-.066 1.015-.37 1.288-.695.27-.322.397-.67.456-.903l.003-.014 2.965-13.174c.141-.627.055-1.167-.19-1.574-.243-.404-.63-.637-1.002-.747a2.07 2.07 0 0 0-.562-.074z"/><path d="M14.5 14.5l-2 4" stroke-width="1.5"/></svg>
-    </div>
-    <h2>You're Almost There!</h2>
-    <p>Tap below to join King Of Nifty's free Telegram channel.</p>
-    <a href="https://t.me/+xkLX2WMRJTM5ZTQ9" target="_blank" rel="noopener" class="ov-cta" onclick="trackSubscribe()">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      Tap to Join Channel
-    </a>
-    <a href="tg://join?invite=xkLX2WMRJTM5ZTQ9" class="ov-tg" onclick="trackSubscribe()">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      Open in Telegram App
-    </a>
-    <button class="ov-copy" id="overlayCopyBtn" onclick="copyLinkOverlay()">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:3px"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-      Copy Link & Open Manually
-    </button>
-    <div class="ov-hint">If nothing happens, copy the link and paste it in your browser or Telegram app</div>
-  </div>
-</div>
-
-<script>
-var TG_WEB = "https://t.me/+xkLX2WMRJTM5ZTQ9";
-var TG_APP = "tg://join?invite=xkLX2WMRJTM5ZTQ9";
-var attempted = false;
-
-/* ===== Pixel Events ===== */
-function trackSubscribe() {
-  if (typeof fbq === "function") fbq("track", "Subscribe");
-}
-
-function trackLead() {
-  if (typeof fbq === "function") fbq("track", "Lead");
-}
-
-/* ===== Copy ===== */
-function copyLink() { doCopy(TG_WEB, document.getElementById("copyBtn")); }
-function copyLinkOverlay() { doCopy(TG_WEB, document.getElementById("overlayCopyBtn")); }
-
-function doCopy(text, btn) {
-  var done = function() {
-    var o = btn.innerHTML;
-    btn.classList.add("copied");
-    btn.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:3px"><polyline points="20 6 9 17 4 12"/></svg> Copied!';
-    setTimeout(function() { btn.innerHTML = o; btn.classList.remove("copied"); }, 2000);
-  };
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(done).catch(function() { fbCopy(text, btn, done); });
-  } else {
-    fbCopy(text, btn, done);
-  }
-}
-
-function fbCopy(text, btn, done) {
-  var t = document.createElement("textarea");
-  t.value = text;
-  t.style.cssText = "position:fixed;left:-9999px";
-  document.body.appendChild(t);
-  t.select();
-  try { document.execCommand("copy"); done(); } catch(e) { btn.textContent = "Failed"; }
-  document.body.removeChild(t);
-}
-
-/* ===== Timer + Redirect ===== */
-(function() {
-  var TOTAL = 15, s = TOTAL;
-  var cd = document.getElementById("countdown");
-  var pb = document.getElementById("progressBar");
-  var ov = document.getElementById("redirectOverlay");
-
-  var t = setInterval(function() {
-    s--;
-    if (cd) { cd.textContent = s; cd.classList.add("tick"); setTimeout(function() { cd.classList.remove("tick"); }, 300); }
-    if (pb) pb.style.width = Math.max(0, (s / TOTAL) * 100) + "%";
-    if (s <= 0) { clearInterval(t); trackLead(); doRedirect(ov); }
-  }, 1000);
-})();
-
-function doRedirect(ov) {
-  if (attempted) return;
-  attempted = true;
-
-  /* Try tg:// via iframe */
-  var f = document.createElement("iframe");
-  f.style.display = "none";
-  f.src = TG_APP;
-  document.body.appendChild(f);
-
-  /* Try window.location */
-  setTimeout(function() { window.location.href = TG_WEB; }, 300);
-
-  /* Fallback: overlay with tap button */
-  setTimeout(function() {
-    if (f.parentNode) f.parentNode.removeChild(f);
-    if (ov) ov.classList.add("active");
-  }, 2000);
-}
-
-/* ===== Particles ===== */
-(function() {
-  var c = document.getElementById("particles");
-  var ctx = c.getContext("2d");
-  var pts = [];
-  function resize() { c.width = innerWidth; c.height = innerHeight; }
-  resize();
-  addEventListener("resize", resize);
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-  function P() { this.r(); }
-  P.prototype.r = function() {
-    this.x = Math.random() * c.width;
-    this.y = Math.random() * c.height;
-    this.s = Math.random() * 1.8 + 0.4;
-    this.dx = (Math.random() - 0.5) * 0.25;
-    this.dy = (Math.random() - 0.5) * 0.25;
-    this.o = Math.random() * 0.25 + 0.04;
-    this.p = Math.random() * 6.28;
-    this.ps = Math.random() * 0.015 + 0.005;
-  };
-  P.prototype.u = function() {
-    this.x += this.dx; this.y += this.dy; this.p += this.ps;
-    if (this.x < -10 || this.x > c.width + 10 || this.y < -10 || this.y > c.height + 10) this.r();
-  };
-  P.prototype.d = function() {
-    var a = this.o * (0.5 + 0.5 * Math.sin(this.p));
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, Math.max(0.1, this.s), 0, 6.28);
-    ctx.fillStyle = "rgba(212,175,55," + a + ")";
-    ctx.fill();
-  };
-
-  for (var i = 0; i < 30; i++) pts.push(new P());
-  (function loop() {
-    ctx.clearRect(0, 0, c.width, c.height);
-    for (var i = 0; i < pts.length; i++) { pts[i].u(); pts[i].d(); }
-    requestAnimationFrame(loop);
-  })();
 })();
 </script>
 
